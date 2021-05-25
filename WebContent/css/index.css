@@ -55,10 +55,8 @@ label{
     width: 300px;  
     height: 30px;  
     border: none;  
-    border-radius: 17px;  
-    padding-left: 7px;  
-    color: black;  
-    Background:yellow;
+    border-radius: 3px;  
+    padding-left: 8px;  
   
   
 }  
@@ -66,22 +64,21 @@ label{
     width: 300px;  
     height: 30px;  
     border: none;  
-    border-radius: 17px;  
-    padding-left: 7px;  
-    color: black;  
-    Background:yellow;
+    border-radius: 3px;  
+    padding-left: 8px;  
   
   
-}  
+} 
+
+
+
 
 #num{  
     width: 300px;  
     height: 30px;  
     border: none;  
-    border-radius: 17px;  
-    padding-left: 7px;  
-    color: black;  
-    Background:yellow;
+    border-radius: 3px;  
+    padding-left: 8px;  
   
   
 } 
@@ -90,10 +87,8 @@ label{
     width: 300px;  
     height: 30px;  
     border: none;  
-    border-radius: 17px;  
-    padding-left: 7px;  
-    color: black;  
-    Background:yellow;
+    border-radius: 3px;  
+    padding-left: 8px;  
   
   
 }   

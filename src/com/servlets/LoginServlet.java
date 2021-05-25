@@ -26,6 +26,7 @@ public class LoginServlet extends HttpServlet {
 		//session.setAttribute(key,value)
 		//(type cast)session.getAttribute(key)
 		//session.removeAttribute(key)
+		//we can use cookies
 		
 		
 		

@@ -35,7 +35,6 @@
 		{
 	%>
 	<tr>
-		
 	 	<td><%=rs.getString(4) %></td>
     	<td><%=rs.getString(3) %></td>
     	<form method="get" id="myForm1" action="StudentListTeacher.jsp">
@@ -43,8 +42,6 @@
         <Input type="Hidden" name="subject"  id="rollNo" value="<%=rs.getString(3) %>"> 
        	<td><Button type="submit" style="background:yellow;">View</Button></td>
    		 </form>
-    	
-    
 	<tr>
 	
 	<%}}catch(Exception e){

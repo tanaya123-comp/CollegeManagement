@@ -23,13 +23,16 @@
 			    <th>Student Name </th>
 			    <th>Roll Num</th>
 			    <th>Enrollment Num</th>
+			    <th>View submitted assignments</th>
 			  </tr>
   
   <%
 	try{
 		Connection con=ConnectionProvider.con();
 		Statement st=con.createStatement();
-		ResultSet rs=st.executeQuery("select * from student where class='"+request.getParameter("Class")+"'"); 
+		ResultSet rs=st.executeQuery("select * from student where class='"+request.getParameter("class")+"'"); 
+		String subject=(String)request.getParameter("subject");
+		System.out.print(subject);
 		while(rs.next())
 		{
 	%>
@@ -37,7 +40,10 @@
 		<td><%=rs.getString(1) %></td>
 	 	<td><%=rs.getString(3) %></td>
     	<td><%=rs.getString(2) %></td>
-    	<form method="get" id="myForm1" action="StudentListTeacher.jsp">
+    	<form method="get" id="myForm1" action="StudentAssignmentList.jsp">
+    	<Input type="Hidden" name="roll"   value="<%=rs.getString(3) %>"> 
+        <Input type="Hidden" name="en"   value="<%=rs.getString(2) %>">
+        <Input type="Hidden" name="subject"   value=<%=subject %>> 
        	<td><Button type="submit" style="background:yellow;">View Assignments</Button></td>
    		 </form>
     	
